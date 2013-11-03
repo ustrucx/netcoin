@@ -1,4 +1,3 @@
-
 TEMPLATE = app
 TARGET =
 VERSION = 0.6.3
@@ -8,15 +7,15 @@ CONFIG += no_include_pwd
 
 # for boost 1.37, add -mt to the boost libraries
 # use: qmake BOOST_LIB_SUFFIX=-mt
- for boost thread win32 with _win32 sufix
- use: BOOST_THREAD_LIB_SUFFIX=_win32-...
- or when linking against a specific BerkelyDB version: BDB_LIB_SUFFIX=-4.8
+# for boost thread win32 with _win32 sufix
+# use: BOOST_THREAD_LIB_SUFFIX=_win32-...
+# or when linking against a specific BerkelyDB version: BDB_LIB_SUFFIX=-4.8
 
- Dependency library locations can be customized with:
-    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
-    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
- Change following your build environment
- I am using mingw to build
+# Dependency library locations can be customized with:
+#    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
+#    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
+# Change following your build environment
+# I am using mingw to build
 
 OBJECTS_DIR = build
 MOC_DIR = build
